@@ -5,7 +5,7 @@
              Title="Visuals">
 
     <StackLayout Padding="10,0">
-        <Label Text="Hello, Xamarin.Forms!"
+        <Label Text="Platform Visuals"
                FontSize="Large"
                VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
@@ -21,15 +21,7 @@
     </StackLayout>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="edit" Order="Primary">
-            <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="edit.png" />
-                    <On Platform="Android" Value="ic_action_edit.png" />
-                    <On Platform="UWP" Value="Images/edit.png" />
-                </OnPlatform>
-            </ToolbarItem.Icon>
-        </ToolbarItem>
+        <ToolbarItem Text="edit" Order="Primary" IconImageSource="ic_action_edit.png"></ToolbarItem>
 
         <ToolbarItem Text="search" Order="Primary">
             <ToolbarItem.Icon>
